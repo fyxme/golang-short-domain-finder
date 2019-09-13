@@ -7,6 +7,7 @@ Particularly usefull for url shortener websites or finding a free subdomain with
 
 This was originally created to find a short `.me` domain as a student since namecheap offers those.
 
+See todo section for a better way to do this
 
 ## Requirements
 
@@ -42,3 +43,5 @@ The error messages are printed to stderr so you can simply redirect valid names 
 
 - Some domains don't seem to be supported such as gq with current whois server
     - Potential fix: use a list of whois servers such as `https://github.com/whois-server-list/whois-server-list`
+- Add file input
+- A potentially better way to do this: do a dns lookup. If the name does not resolve to an ip, do a whois lookup
