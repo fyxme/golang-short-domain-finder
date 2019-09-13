@@ -31,7 +31,7 @@ Usage of ./short-domain-finder:
         Number of worker to query whois in parallel. Too many may overwhelm the service and get you blocked (default 10)
 ```
 
-The error messages are printed to stderr so you can simply redirect valid names to files as such:
+The error messages are printed to stderr so you can simply redirect valid names to a file as such:
 
 ```
 ./short-domain-finder > output.txt
