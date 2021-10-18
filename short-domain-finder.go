@@ -4,7 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/likexian/whois-go"
+	"github.com/likexian/whois"
 	"os"
 	"regexp"
 	"strings"
@@ -116,7 +116,7 @@ func dispatcher(workerChan chan string, exts []string, maxLen int) {
 }
 
 func main() {
-	extsFlag := flag.String("exts", "tk,ml,ga,cf", "List of domain extensions (ie. .com, .io)") // gq is not supported for now...
+	extsFlag := flag.String("exts", "tk,ml,cf", "List of domain extensions (ie. .com, .io)") // ga, gq is not supported for now...
 	lenFlag := flag.Int("len", 3, "Maximum length of domain name")
 	sepFlag := flag.String("sep", ",", "Char used to separate the list of domain extensions")
 	workersFlag := flag.Int("workers", 10, "Number of worker to query whois in parallel. Too many may overwhelm the service and get you blocked")
