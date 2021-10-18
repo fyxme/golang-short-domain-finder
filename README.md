@@ -11,7 +11,7 @@ See todo section for a better way to do this
 
 ## Requirements
 
-Uses the [whois.go](https://github.com/likexian/whois-go) module.
+Uses the [whois.go](https://github.com/likexian/whois) module.
 
 To install:
 
