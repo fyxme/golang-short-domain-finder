@@ -15,7 +15,7 @@ Uses the [whois.go](https://github.com/likexian/whois) module.
 
 To install:
 
-`go get -u github.com/likexian/whois-go`
+`go get -u github.com/likexian/whois`
 
 
 ## Usage
