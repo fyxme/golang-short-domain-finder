@@ -12,7 +12,7 @@ import (
 
 const (
 	UNREGISTERED_DOMAIN_REGEX = "^No match|^NOT FOUND|^Not fo|AVAILABLE|^No Data Fou|has not been regi|No entri|^Invalid query or domain name not known in"
-    LEN_ALPHABET = 26
+	LEN_ALPHABET              = 26
 )
 
 func whoisDomainLookup(domain string) (string, error) {
@@ -142,6 +142,6 @@ func main() {
 	}
 
 	close(resultChan)
-	//wait until outputerService finishes
+	// wait until outputerService finishes
 	<-completed
 }
